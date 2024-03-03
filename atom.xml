@@ -121,19 +121,17 @@ tags:
   - # 标签1
   - # 标签2
 ---
-
-# 在这里你就可以开始写你的博客啦！
-
-还有一种网页就是类似于``` www.example.com/about/ ```你可以用这个命令来创建：
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;npx hexo new page &amp;quot;网页名字&amp;quot;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;这种网页不会显示在主页里，使用适合拿来做一些比如个人主页，或者成就墙的页面等。。。
-
-追后只要运行：
+&lt;h1 id=&#34;在这里你就可以开始写你的博客啦&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在这里你就可以开始写你的博客啦&#34;&gt;#&lt;/a&gt; 在这里你就可以开始写你的博客啦！&lt;/h1&gt;
+&lt;p&gt;还有一种网页就是类似于 &lt;code&gt;www.example.com/about/&lt;/code&gt;  你可以用这个命令来创建：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npx hexo new page &amp;quot;网页名字&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;npx hexo g&lt;br /&gt;
-npx hexo s&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;就可以了。&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;这种网页不会显示在主页里，使用适合拿来做一些比如个人主页，或者成就墙的页面等。。。&lt;/p&gt;
+&lt;p&gt;追后只要运行：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npx hexo g
+npx hexo s
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;就可以了。&lt;/p&gt;
 </content>
         <category term="hexo" scheme="http://black-tamago.github.com/categories/hexo/" />
         <category term="hexo" scheme="http://black-tamago.github.com/tags/hexo/" />
