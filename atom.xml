@@ -34,104 +34,24 @@ git 的验证方法也是类似的：&lt;/p&gt;
 用来生成博客的命令是这个：&lt;/p&gt;
 &lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npx hexo init&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;跑完后可以运行 &lt;code&gt;npx hexo s&lt;/code&gt;  来验证是否生成，让后 &lt;code&gt;Ctrl+C&lt;/code&gt;  退出。&lt;br /&gt;
 生成的文件如下：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;.github
-node_modules
-scaffolds
-source
-themes
-.gitignore
-db.json
-package-lock.json
-package.json
-_config.landscape.yml
-_config.yml
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;接下来让我们打开 &lt;code&gt;_config.yml&lt;/code&gt; （推荐用类似 vscode 之类的文本编辑器），这个文件是设置一些默认设置的，比如标题，作者名字之类的。&lt;br /&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.github&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;node_modules&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;scaffolds&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token builtin class-name&#34;&gt;source&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;themes&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;.gitignore&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;db.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;package-lock.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;package.json&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_config.landscape.yml&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;_config.yml&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;接下来让我们打开 &lt;code&gt;_config.yml&lt;/code&gt; （推荐用类似 vscode 之类的文本编辑器），这个文件是设置一些默认设置的，比如标题，作者名字之类的。&lt;br /&gt;
 我会列举一些对于 shoka 这个主题比较重要的选项：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;title: # 标题
-subtitle: # 副标题
-author: # 作者
-
-# 关闭代码高亮（因为有一些bug），hexo版本使用命令``` hexo -v ```查看
-# hexo版本 &amp;lt;= 7.0
-syntax_highlighter:  # empty
-# hexo版本 &amp;gt; 7.0
-highlight:
-  enable: false
-prismjs:
-  enable: false
-
-theme: # 主题 (shoka)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;下载shoka&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载shoka&#34;&gt;#&lt;/a&gt; 下载 shoka&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: &lt;span class=&#34;token comment&#34;&gt;# 标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;subtitle: &lt;span class=&#34;token comment&#34;&gt;# 副标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;author: &lt;span class=&#34;token comment&#34;&gt;# 作者&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 关闭代码高亮（因为有一些 bug），hexo 版本使用命令 ```hexo -v``` 查看&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# hexo 版本 &amp;lt;= 7.0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;syntax_highlighter:  &lt;span class=&#34;token comment&#34;&gt;# empty&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# hexo 版本 &gt; 7.0&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;highlight:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  enable: &lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;prismjs:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  enable: &lt;span class=&#34;token boolean&#34;&gt;false&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;theme: &lt;span class=&#34;token comment&#34;&gt;# 主题 (shoka)&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;下载shoka&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#下载shoka&#34;&gt;#&lt;/a&gt; 下载 shoka&lt;/h2&gt;
 &lt;p&gt;在下载 shoka 之前必须下载他的依赖，用以下代码：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# 删除默认渲染器
-npm un hexo-renderer-marked --save
-# 下载作者的渲染器
-npm i hexo-renderer-multi-markdown-it --save
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;下载好之后，在&lt;strong&gt;风水宝地&lt;/strong&gt;下打开命令行，让后运行一下其中一个命令即可：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# cd your-blog
-git clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka
-# 后者是我修改的一个版本，修改了一些bug
-git clone https://github.com/black-tamago/hexo-theme-shoka.git ./themes/shoka
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;shoka设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shoka设置&#34;&gt;#&lt;/a&gt; shoka 设置&lt;/h2&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 删除默认渲染器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; un hexo-renderer-marked &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 下载作者的渲染器&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;npm&lt;/span&gt; i hexo-renderer-multi-markdown-it &lt;span class=&#34;token parameter variable&#34;&gt;--save&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;下载好之后，在&lt;strong&gt;风水宝地&lt;/strong&gt;下打开命令行，让后运行一下其中一个命令即可：&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# cd your-blog&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone https://github.com/amehime/hexo-theme-shoka.git ./themes/shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 后者是我修改的一个版本，修改了一些 bug&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token function&#34;&gt;git&lt;/span&gt; clone https://github.com/black-tamago/hexo-theme-shoka.git ./themes/shoka&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h2 id=&#34;shoka设置&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#shoka设置&#34;&gt;#&lt;/a&gt; shoka 设置&lt;/h2&gt;
 &lt;p&gt;shoka 的设置文件在 &lt;code&gt;**风水宝地**/theme/shoka/_config.yml&lt;/code&gt; ，但是为了方便日后的更新（虽然 2 年没更新了），我们还是复制一份到&lt;strong&gt;风水宝地&lt;/strong&gt;并改名为 &lt;code&gt;_config.shoka.yml&lt;/code&gt; 。&lt;br /&gt;
 _config.shoka.yml 的配置：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;alternate: # 主页标题
-
-favicon:
-  apple_touch_icon: # 网页标志
-
-darkmode: # 黑暗模式（true / false）
-
-loader: # 猫猫动画
-
-# 菜单，只需要删掉前面的井号就可以了
-menu:
-  home: \ || home
-  ...
-
-# 社交媒体，只需要删掉前面的井号就可以了
-social:
-  ...
-
-reward:
-  enable: # 打赏入口（true / false）
-
-# 音乐播放（默认关闭），只需要删掉前面的井号就可以了
-audio:
-  - title:
-    list:
-      - https://music.163.com/...
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;设置头像的话只需要创建两个文件夹让后吧头像放到这个路径即可 &lt;code&gt;**风水宝地**/_data/images/avatar.jpg&lt;/code&gt; 。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;alternate: &lt;span class=&#34;token comment&#34;&gt;# 主页标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;favicon:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  apple_touch_icon: &lt;span class=&#34;token comment&#34;&gt;# 网页标志&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;darkmode: &lt;span class=&#34;token comment&#34;&gt;# 黑暗模式（true /false）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;loader: &lt;span class=&#34;token comment&#34;&gt;# 猫猫动画&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 菜单，只需要删掉前面的井号就可以了&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;11&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;menu:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;12&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  home: &lt;span class=&#34;token punctuation&#34;&gt;\&lt;/span&gt; &lt;span class=&#34;token operator&#34;&gt;||&lt;/span&gt; home&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;13&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;14&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;15&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 社交媒体，只需要删掉前面的井号就可以了&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;16&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;social:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;17&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  &lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;18&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;19&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;reward:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;20&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  enable: &lt;span class=&#34;token comment&#34;&gt;# 打赏入口（true /false）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;21&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;22&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;&lt;span class=&#34;token comment&#34;&gt;# 音乐播放（默认关闭），只需要删掉前面的井号就可以了&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;23&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;audio:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;24&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - title:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;25&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;    list:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;26&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;      - https://music.163.com/&lt;span class=&#34;token punctuation&#34;&gt;..&lt;/span&gt;.&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;设置头像的话只需要创建两个文件夹让后吧头像放到这个路径即可 &lt;code&gt;**风水宝地**/_data/images/avatar.jpg&lt;/code&gt; 。&lt;/p&gt;
 &lt;h2 id=&#34;添加网页&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#添加网页&#34;&gt;#&lt;/a&gt; 添加网页&lt;/h2&gt;
 &lt;p&gt;如果你要添加的是一个新的博客请用 &lt;code&gt;npx hexo new post &amp;quot;博客的名字&amp;quot;&lt;/code&gt; 。&lt;br /&gt;
 你的博客会储存在 &lt;code&gt;风水宝地/source/_posts/你的博客.md&lt;/code&gt; &lt;br /&gt;
  你的博客的内部大概长这样：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;title: # 标题
-date: # 时间（制动生成）
-cover: 
-categories: # 分类的规则是一环套一环的，比如这个博客的分类是 -&amp;gt; 博客1 -&amp;gt; 博客2 -&amp;gt; 你的博客
-  - # 分类1
-  - # 分类2
-tags:
-  - # 标签1
-  - # 标签2
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h1 id=&#34;在这里你就可以开始写你的博客啦&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在这里你就可以开始写你的博客啦&#34;&gt;#&lt;/a&gt; 在这里你就可以开始写你的博客啦！&lt;/h1&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;title: &lt;span class=&#34;token comment&#34;&gt;# 标题&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;date: &lt;span class=&#34;token comment&#34;&gt;# 时间（制动生成）&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;3&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;cover: &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;4&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;categories: &lt;span class=&#34;token comment&#34;&gt;# 分类的规则是一环套一环的，比如这个博客的分类是 -&gt; 博客 1 -&gt; 博客 2 -&gt; 你的博客&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;5&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - &lt;span class=&#34;token comment&#34;&gt;# 分类 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;6&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - &lt;span class=&#34;token comment&#34;&gt;# 分类 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;7&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;tags:&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;8&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - &lt;span class=&#34;token comment&#34;&gt;# 标签 1&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;9&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;  - &lt;span class=&#34;token comment&#34;&gt;# 标签 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;10&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;---&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;h1 id=&#34;在这里你就可以开始写你的博客啦&#34;&gt;&lt;a class=&#34;anchor&#34; href=&#34;#在这里你就可以开始写你的博客啦&#34;&gt;#&lt;/a&gt; 在这里你就可以开始写你的博客啦！&lt;/h1&gt;
 &lt;p&gt;还有一种网页就是类似于 &lt;code&gt;www.example.com/about/&lt;/code&gt;  你可以用这个命令来创建：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npx hexo new page &amp;quot;网页名字&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;这种网页不会显示在主页里，使用适合拿来做一些比如个人主页，或者成就墙的页面等。。。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npx hexo new page &lt;span class=&#34;token string&#34;&gt;&#34;网页名字&#34;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;这种网页不会显示在主页里，使用适合拿来做一些比如个人主页，或者成就墙的页面等。。。&lt;/p&gt;
 &lt;p&gt;追后只要运行：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;npx hexo g
-npx hexo s
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;就可以了。&lt;/p&gt;
+&lt;figure class=&#34;highlight bash&#34;&gt;&lt;figcaption data-lang=&#34;bash&#34;&gt;&lt;span&gt;h&lt;/span&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npx hexo g&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;npx hexo s&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;就可以了。&lt;/p&gt;
 </content>
         <category term="hexo" scheme="http://black-tamago.github.com/categories/hexo/" />
         <category term="hexo" scheme="http://black-tamago.github.com/tags/hexo/" />
